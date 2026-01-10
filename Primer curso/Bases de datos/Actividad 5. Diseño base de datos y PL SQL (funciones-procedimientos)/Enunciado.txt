@@ -1,0 +1,19 @@
+Enunciado
+
+Debemos diseñar y crear, una base de datos para la gestión de prestamos en una biblioteca municipal. Los usuarios están registrados en la base de datos, y los libros están dados de alta con todos sus datos identificativos, ISBN, titulo, autor, etc.
+
+Lo importante es el control de prestamos de libros que se hacen a los usuarios, la fecha de entrega y devolución, los días de penalización por falta de entrega a tiempo, enviar mensajes recordando la entrega y la penalización superior a 7 días que hace que usuario no pueda realizar prestamos hasta pasados 2 meses desde la devolución del libro con retraso en la entrega.
+
+Debemos crear un procedimiento para insertar usuarios, con los datos necesarios para el alta de los mismos como parámetros. Otro procedimiento para dar de alta los libros según llegan a la biblioteca, con todos los datos que debemos informar en la tabla correspondiente. Y por último un procedimiento para insertar los prestamos en su correspondiente tabla.
+
+Crearemos dos funciones para gestionar la información de prestamos:
+
+SANCION_USUARIO: Calculará la diferencia entre la fecha de préstamo y la del momento de cálculo, y devolverá una cadena que puede ser ACTIVO, GRAVE Y MUY GRAVE. Si los días devueltos son menores o iguales a 7, el préstamo será ACTIVO (no hay problema), si son mayores de 7 y menores de 12 el estado del préstamo será GRAVE y si es mayor de 12 será MUY GRAVE.
+MENSAJE_SANCION: Compondrá el siguiente mensaje como salida de la función (Estimado usuario <nombre y apellidos>, el pasado día <día préstamo> realizó un préstamo en nuestra biblioteca con código <código préstamo> y ha superado la fecha de entrega prevista en <días superación fecha entrega normal> días, por lo que le corresponde una sanción <GRAVE o MUY GRAVE>)
+Por último, crearemos un procedimiento que llamaremos GESTOR, que recorrerá toda la tabla que recoge los prestamos y aplicará las funciones SANCION_USUARIO y MENSAJE_SANCION, e irá actualizando los campos NIVEL_SANCION y MENSAJE, de esa misma tabla además de insertar en una tabla adicional llamada SANCIONADOS, los datos de CODIGO_USUARIO, FECHA_PRESTAMO, DIAS_SANCION y MENSAJE, de todos los usuarios que tengan un NIVEL_SANCION, que sea GRAVE O MUY GRAVE.
+
+ 
+
+Evaluación de la actividad
+
+Se evaluará el diseño del diagrama E/R, DIAGRAMA FUNCIONAL, TABLAS, 2 funciones y 4 procedimientos.
