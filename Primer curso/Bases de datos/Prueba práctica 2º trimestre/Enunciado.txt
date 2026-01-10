@@ -1,3 +1,0 @@
- 1.- Consulta SQL que muestre el nombre del cliente y el total de sus pedidos, para aquellos clientes que hayan realizado más de 5 pedidos. Utiliza las tablas "clientes" y "pedidos", donde "id_cliente" es la clave primaria en la tabla "clientes" y la clave externa en la tabla "pedidos".
-
-2.- Consulta SQL que muestre el nombre de los clientes que han realizado al menos un pedido cuyo valor total sea superior a 1000€. Utiliza las tablas "clientes" y "pedidos", donde "id_cliente" es la clave primaria en la tabla "clientes" y la clave externa en la tabla "pedidos". La tabla "pedidos" también tiene una columna llamada "valor_total".
