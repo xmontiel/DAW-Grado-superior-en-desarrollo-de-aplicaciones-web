@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/arcade.png" type="image/x-icon">
+    <title>StreetFighter-UNIR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To live is to fight, to fight is to live!</h1>
+    <table>
+        <thead>
+            <td colspan="4" class="cabecera">Street Figther</td>
+        </thead>
+        <tr>
+            <td>KEN<img src="img/ken.png" alt="KEN"></td>
+            <td>CHUN LI<img src="img/ChunLi.png" alt="CHUN LI"></td>
+            <td>ZANGIEF<img src="img/Zangief.png" alt="ZANGIEF"></td>
+            <td>DHALSIM<img src="img/Dhalsim.png" alt="DHALSIM"></td>
+        </tr>
+        <tr>
+            <td>RYU<img src="img/Ryu.png" alt="RYU"></td>
+            <td>E HONDA<img src="img/EHonda.png" alt="E HONDA"></td>
+            <td>BLANKA<img src="img/Blanka.png" alt="BLANKA"></td>
+            <td>GUILE<img src="img/Guille.png" alt="GUILE"></td>
+        </tr>
+        <tr>
+            <td>T HAWK<img src="img/THawk.png" alt="T HAWK"></td>
+            <td>FEILONG<img src="img/Feilong.png" alt="FEILONG"></td>
+            <td>DEE JAY<img src="img/DeeJay.png" alt="DEE JAY"></td>
+            <td>CAMMY<img src="img/Cammy.png" alt="CAMMY"></td>
+        </tr>
+        <tr>
+            <td>BALROG<img src="img/Balrog.png" alt="BALROG"></td>
+            <td>VEGA<img src="img/Vega.png" alt="VEGA"></td>
+            <td>SAGAT<img src="img/Sagat.png" alt="SAGAT"></td>
+            <td>M BISON<img src="img/MBison.png" alt="M BISON"></td>
+        </tr>
+    </table>
+
+    <h2>Formulario de inscripción para jugar a Street Figther</h2>
+
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <div><label for="nombre">Nombre:</label></div>
+            <div><input type="text" id="nombre" name="nombre"></div>
+
+            <div><label for="apellidos">Apellidos:</label></div>
+            <div><input type="text" id="apellidos" name="apellidos"></div>
+
+            <div><label for="direccion">Dirección Postal:</label></div>
+            <div>
+                <input type="text" id="calle" name="calle" placeholder="Calle">
+                <input type="number" id="numerocalle" name="numerocalle" placeholder="N°">
+                <input type="text" id="piso" name="piso" placeholder="Piso">
+                <input type="number" id="codpostal" name="codpostal" placeholder="Cód.Postal">
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+            </div>
+
+            <div><label for="nick">Nick:</label></div>
+            <div><input type="text" id="nick" name="nick"></div>
+
+            <div><label for="email">Correo Electrónico:</label></div>
+            <div><input type="email" id="email" name="email"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo usuario</legend>
+            <div class="nomargin"><input type="radio" name="sexo" value="H">Hombre</div>
+            <div class="nomargin"><input type="radio" name="sexo" value="M">Mujer</div>
+            <div class="nomargin"><input type="radio" name="sexo" value="O">Prefiero No Decir</div>
+        </fieldset>
+
+        <fieldset>
+            <div class="nomargin">
+                <label for="nacimiento">Fecha nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personajes</legend>
+            <div class="nomargin">
+                <label for="personaje">Selecciona el personaje:</label>
+                <input type="text" id="personaje" name="personaje">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <div class="nomargin">   
+                <textarea name="comentarios" id="comentarios" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <input class="boton" id="enviar" type="submit" value="Enviar">
+        <input class="boton" type="reset" value="Borrar">
+
+    </form>
+    
+</body>
+</html>
