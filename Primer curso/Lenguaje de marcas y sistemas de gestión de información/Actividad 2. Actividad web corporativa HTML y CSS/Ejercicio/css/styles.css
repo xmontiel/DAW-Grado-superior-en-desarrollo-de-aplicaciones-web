@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'BreakingBad';
+    src: url('../Breaking\ Bad.ttf');
+}
+
+.formatoindex{
+    text-align: center;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'BreakingBad';
+    color: white;
+    font-size: 40px;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+}
+
+.poster{
+    background-image: url('../img/poster.jpg');
+    background-size: 100% 100%;
+    height: 300px;
+    width: 700px; 
+    position: relative;
+    border: 10px outset brown;
+    border-radius: 22px;
+}
+
+.formatoformulario{
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+}
+
+.tituloformulario{
+    font-size: 40px;
+}
+
+.comentarios {
+    height: 100px;
+    width: 100%;
+}
+
+.formatotabla {
+    text-align: center;
+    background-color: #0c3e11;
+}
+
+.tablas {
+    align-self: center;
+    text-align: center;
+    background-color: black;
+    font-size: 40px;
+    color: rgb(54, 52, 53);
+    font-family: Helvetica, sans-serif;
+    border-spacing: 8px;
+    margin: auto;
+}
+
+.cuadrogenerico {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+}
+
+.cuadro1 {
+    background-color: rgb(183, 217, 36);
+}
+
+.cuadro2 {
+    background-color: rgb(129, 142, 76);
+}
+
+.cuadro3 {
+    background-color: rgb(195, 224, 75);
+}
+
+.cuadro4 {
+    background-color: rgb(187, 196, 158);
+}
+
+.cuadro5{
+    background-color: rgb(225, 230, 202);
+}
+
+.cuadro6{
+    background-color: rgb(137, 164, 24);
+}
+
+.cuadro7{
+    background-color: rgb(99, 115, 32);
+}
+
+.cuadro8{
+    background-color: rgb(171, 142, 207);
+}
+
+.cuadro9 {
+    background-color: rgb(211, 231, 124);
+}
+
+.cuadroHa {
+    background-image: url('/img/Tabla\ Periódica/hankschrader.png');
+    background-size: cover;
+    padding: 0px;
+}
+
+.cuadro10 {
+    background-color: rgb(195, 194, 55);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div {
+    text-align: center;
+    font-size: 10px;
+}
+
+.imagen1 {
+    background-image: url('/img/Tabla Periódica/bus.png');
+}
+
+.imagen2 {
+    background-image: url('/img/Tabla Periódica/pistola.png');
+}
+
+.imagen3 {
+    background-image: url('/img/Tabla Periódica/pocima.png');
+}
+
+.imagen4 {
+    background-image: url('/img/Tabla Periódica/movil.png');
+}
+
+.imagen5 {
+    background-image: url('/img/Tabla Periódica/mosca.png');
+}
+
+.imagen6 {
+    background-image: url('/img/Tabla Periódica/cristal.png');
+}
+
+.imagen7 {
+    background-image: url('/img/Tabla Periódica/pizza.png');
+}
+
+.imagen8 {
+    background-image: url('/img/Tabla Periódica/calzoncillos.png');
+}
+
+.imagen9 {
+    background-image: url('/img/Tabla Periódica/mascara.png');
+}
+
+.imagen10 {
+    background-image: url('/img/Tabla Periódica/plato.png');
+}

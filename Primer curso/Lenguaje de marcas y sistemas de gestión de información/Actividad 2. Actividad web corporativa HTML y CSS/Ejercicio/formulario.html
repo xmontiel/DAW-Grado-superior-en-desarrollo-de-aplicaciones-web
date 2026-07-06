@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Formulario</title>
+</head>
+<body class="formatoindex">
+    <form action="raul.rodriguez@proeducaglobal.com" method="get" name="formulario">
+    <fieldset class="formatoformulario">
+        <legend class="tituloformulario">Breaking Bad - Que comience el juego!</legend>
+        <br>
+        <fieldset>
+            <!--Primera manera de hacer el formulario. Nombrar la información pedida al lado del campo de entrada de datos-->
+            <legend>Datos Personales: </legend>
+            <table>
+                <tr>
+                <td>Nombre: </td><td><input type="text" placeholder="Campo obligatorio" required></td>
+                </tr>
+                <tr>
+                <td>Apellidos: </td><td><input type="text" placeholder="Campo obligatorio" required></td>
+                </tr>
+                <tr>
+                <td>Correo Electronico: </td><td><input type="email" placeholder="Campo obligatorio" required></td>
+                </tr>
+                <tr>
+                <td>DNI: </td><td><input type="text"></td>
+                </tr>
+                <tr>
+                <td>Fecha de Nacimiento: </td><td><input type="date" name="" id=""></td>
+                </tr>
+            </table>
+            <br>
+            <fieldset>
+                <!--Segunda manera de hacer el formulario. Nombrar la información pedida dentro del campo de entrada de datos-->
+                <!--Por cuestión de estilo lo correcto es llevar a cabo una sola manera, enseñamos las dos opciones para que mas adelante se elija-->
+                <legend>Direccion Postal: </legend> 
+                <input type="text" placeholder="Calle">
+                <br><input type="number" placeholder="Número">
+                <br><input type="text" placeholder="Piso">
+                <br><input type="number" placeholder="Código Postal">
+                <br><input type="text" placeholder="Ciudad">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Sexo: </legend>
+                <input type="radio" name="sexo" value="H">Hombre
+                <br><input type="radio" name="sexo" value="M">Mujer
+            </fieldset>        
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Elija su personaje preferido: </legend>
+            <select name="personaje">
+                <option value="1">Jesse Pinkman</option>
+                <option value="2">Walter White</option>
+                <option value="3">Saul Goodman</option>
+                <option value="4">Gustavo Fring</option>
+                <option value="5">Pollos Hermanos</option>
+                <option value="6">Otros personajes</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dejenos un comentario: </legend>
+            <br><textarea class='comentarios' placeholder="Límite de 140 caracteres." maxlength="140"></textarea>
+            <br><br>
+        </fieldset>     
+        <br>
+        <input type="file" name="adjuntar" value="Adjuntar archivo">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar todos los campos">
+    </fieldset>
+    </form>
+</body>
+</html>
