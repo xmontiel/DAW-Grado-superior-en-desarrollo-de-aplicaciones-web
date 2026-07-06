@@ -1,0 +1,231 @@
+/****************************************** SET ******************************************/
+@font-face {
+  /* Set Typography */
+  font-family: 'Sansation';
+  src: url('../assets/font/Sansation/Sansation-Light.ttf') format('woff');
+  font-weight: 400;
+}
+
+:root {
+  /* Set Vars & Set Font */
+  --color-white: rgb(255, 255, 255);
+  --color-night: rgb(14, 14, 14);
+  --color-gray: rgb(42, 42, 42);
+
+  --primary-font: 'Sansation', Helvetica;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  /* Set General Paddings, Margins & Set Scrollbar */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+
+  ::-webkit-scrollbar {
+    width: auto;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray);
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 7px var(--color-night);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Set Theme */
+  :root {
+    --color-white: rgb(246, 244, 244);
+    --color-night: rgb(14, 14, 14);
+    --color-gray: rgb(42, 42, 42);
+  }
+}
+
+area:-webkit-any-link {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 88%;
+  max-width: 76rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter {
+  backdrop-filter: blur(1.0625rem);
+  overflow: hidden;
+  border-radius: .625rem;
+  -webkit-border-radius: .625rem;
+  -moz-border-radius: .625rem;
+  -ms-border-radius: .625rem;
+  -o-border-radius: .625rem;
+}
+
+.padding {
+  padding: 1.875rem 0.9375rem;
+}
+
+.margin {
+  margin: 1.875rem 0.9375rem;
+}
+
+.margin__top {
+  margin-top: 1.875rem;
+}
+
+.v_centered {
+  display: flex;
+  align-items: center;
+}
+
+.h_centered {
+  display: flex;
+  justify-content: center;
+}
+
+.pos_fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.expand {
+  width: 100%;
+  height: 100%;
+}
+
+.gap5{
+  gap: 5rem;
+}
+
+.hover1:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all ease-out 0.15s;
+  -webkit-transition: all ease-out 0.15s;
+  -moz-transition: all ease-out 0.15s;
+  -ms-transition: all ease-out 0.15s;
+  -o-transition: all ease-out 0.15s;
+}
+
+/****************************************** MOBILE ******************************************/
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav    nav    nav'
+    'main   main   main'
+    'aside  aside  aside'
+    'footer footer footer';
+  grid-template-rows: 21rem 3rem auto 5rem 5rem;
+
+  font-size: 100%;
+  background-color: var(--color-gray);
+  font-family: var(--primary-font);
+  color: var(--color-white);
+
+  background: linear-gradient(rgba(255, 255, 255, 0.1)), url('../../public/fondo.jpg') no-repeat center/cover fixed;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+select {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  font: inherit;
+  background: inherit;
+  width: min(60%, 240px);
+}
+
+option {
+  background: inherit;
+  text-indent: 0;
+}
+
+select:active,
+option:active {
+  border: none;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+section[class="main filter padding"] article h3 {
+  padding-bottom: .625rem;
+}
+
+section[class="main filter padding"] article a {
+  font-size: medium;
+}
+
+/****************************************** PC ******************************************/
+@media (width >= 64rem) {
+  body {
+    grid-template-areas:
+      'header header header'
+      'nav    nav    nav'
+      'main   main   aside'
+      'footer footer footer';
+    grid-template-rows: 15rem 7rem auto 5rem;
+    gap: 1.25rem;
+  }
+
+  .header h1[aria-describedby='Título de citación principal'] {
+    flex-direction: row;
+
+    padding: .875rem .9375rem;
+
+    font-size: 2.5rem;
+  }
+
+  section[class="main filter padding"] article h3 {
+    padding-bottom: .9375rem;
+  }
+
+  section[class="main filter padding"] article a {
+    font-size: small;
+  }
+}

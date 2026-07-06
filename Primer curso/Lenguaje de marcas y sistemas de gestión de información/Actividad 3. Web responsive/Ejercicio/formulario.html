@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+    <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description of this file" />
+    <meta name="keywords" content="HTML, Web, Tests" />
+    <meta name="author" content="Marcos Lambir Torres" />
+    <meta name="author" content="Juan Montiel Fernandez" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="public/favicons/favicon-32x32.png" />
+    <link rel="shortcut icon" href="public/favicons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="public/favicons/site.webmanifest" />
+    
+    <!-- TITLE -->
+    <title>Trabajo Grupal LMS</title>
+    
+    <!-- EXTERNAL LINKS -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/nav.css" />
+    <link rel="stylesheet" href="src/css/aside.css" />
+    <link rel="stylesheet" href="src/css/form.css" />
+
+  </head>
+  <body class="wrapper">
+    <!-- HEADER -->
+    <header>
+      <section class="header">
+        <img width="130" src="./src/assets/img/logo.png" alt="Logo principal" title="Logo principal" />
+        <h1 aria-describedby="Título de citación principal">
+          <span>UNIVERSIDAD</span>
+          <span>&nbsp;INTERNACIONAL</span>
+          <span>&nbsp;DE LA RIOJA X</span>
+        </h1>
+      </section>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav filter">
+      <div class="h_centered expand gap5">
+        <a href="./index.html" class="nav__logo v_centered hover1">INICIO</a>
+
+        <div class="v_centered gap5">
+          <ul class="nav__list">
+            <li class="hover1"><a href="./formulario.html" class="anchor">Contacto</a></li>
+            <li class="hover1"><a href="./areas.html" class="anchor">Areas de actuación</a></li>
+            <li class="hover1"><a href="./quienes.html" class="anchor">Quienes somos</a></li>
+          </ul>
+          <button class="btn__secondary hover1">Soy Btn Secondary</button>
+        </div>
+      </div>
+
+      <div class="nav__modal"></div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <section class="main">
+        <form
+          id="form"
+          class="form wrapper filter"
+          action="mailto:raul.rodriguez@proeducaglobal.com"
+          method="post"
+          enctype="multipart/form-data"
+          role="form"
+          accept-charset="UTF-8"
+        >
+          <!-- <div class="form__titles">
+            <h2>¡Que comience el juego!</h2>
+          </div> -->
+          <fieldset>
+            <legend>Datos Personales*</legend>
+            <label for="nombre" class="form__label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Franco..." />
+
+            <label for="apellidos" class="form__label">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required placeholder="Kelm..." />
+
+            <label for="direccion" class="form__label">Direcci&oacute;n Postal</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Calle, Número, Piso..." />
+
+            <label for="codigo_postal" class="form__label">C&oacute;digo Postal</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" placeholder="330033..." />
+
+            <label for="ciudad" class="form__label">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Madrid..." />
+
+            <label for="dni" class="form__label">DNI</label>
+            <input type="text" id="dni" name="dni" required placeholder="37833345J..." />
+
+            <label for="email" class="form__label">Correo Electr&oacute;nico</label>
+            <input type="email" id="email" name="email" required placeholder="example@mail.com..." />
+          </fieldset>
+
+          <fieldset class="form__radio">
+            <legend>Sexo*</legend>
+
+            <input type="radio" id="hombre" name="sexo" value="Hombre" />
+            <label class="form__label" for="hombre">
+              <span class="form__radiobtn"></span>
+              &nbsp;&nbsp;⭐Hombre
+            </label>
+
+            <input type="radio" id="mujer" name="sexo" value="Mujer" />
+            <label class="form__label" for="mujer">
+              <span class="form__radiobtn"></span>
+              &nbsp;&nbsp;⭐Mujer
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Fecha de Nacimiento*</legend>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+          </fieldset>
+
+          <fieldset>
+            <legend for="grado" class="form__label">Indicanos tu Grado</legend>
+            <select class="form__select" id="grado" name="grado">
+              <option value="asir">CF Grado Superior en Administración de Sistemas Informáticos en Red</option>
+              <option value="dam">CF Grado Superior en Desarrollo de Apps Multiplataforma</option>
+              <option value="daw">CF Grado Superior en Desarrollo de Apps Web</option>
+              <option value="finanzas">CF Grado Superior en Administración y Finanzas</option>
+              <option value="marketing">CF Grado Superior en Marketing y Publicidad</option>
+              <option value="logistica">CF Grado Superior en Transporte y Logística</option>
+              <option value="comercio">CF Grado Superior en Comercio Internacional</option>
+              <option value="Infantil">CF Grado Superior en Educación Infantil</option>
+              <option value="social">CF Grado Superior en Integración Social</option>
+              <option value="sanitaria">CF Grado Superior en Documentación y Administración Sanitaria</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend for="comentarios">Dejenos su consulta</legend>
+            <textarea
+              class="form__txtarea"
+              id="comentarios"
+              name="comentarios"
+              rows="7"
+              cols="30"
+              placeholder="Escribe aquí..."
+            ></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adjuntar archivo</legend>
+            <input type="file" name="archivo" />
+          </fieldset>
+
+          <div class="form__buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- ASIDE -->
+    <aside>
+      <div class="aside filter padding">
+        <h3>Enlaces</h3>
+        <div class="margin__top">
+          <h4>Docencia 100% online</h4>
+          <a>Nuestra metodología te permite estudiar sin desplazarte mediante un modelo de aprendizaje personalizado</a>
+        </div>
+
+        <div class="margin__top">
+          <h4>Clases en directo</h4>
+          <a>Nuestros profesores imparten 4.000 horas de clases online a la semana. Puedes asistir en directo o verlas en otro momento</a>
+        </div>
+
+        <div class="margin__top">
+          <h4>Mentor - UNIR</h4>
+          <a>En UNIR nunca estarás solo. Un mentor realizará un seguimiento individualizado y te ayudará en todo lo que necesites</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer filter padding h_centered">
+        <a>UNIR &ndash; Universidad Internacional de La Rioja 2025&reg;</a>
+      </section>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+  </body>
+</html>
