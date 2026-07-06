@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/03.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body class="cv">
+    <header class="landing">
+        <input type="checkbox" id="ckbox">
+        <label for="ckbox" class="drawer">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="navbar menu-box" id="desaparece">
+            <li><a>Proyectos</a>
+                <ul>
+                    <li><a href="https://github.com/xmontiel/Programacion">Programación Java</a></li>
+                    <li><a href="https://github.com/xmontiel/Base-de-Datos">Base de Datos</a></li>
+                    <li><a href="https://github.com/xmontiel/Sistemas-Informaticos">Sistemas Informáticos</a></li>
+                    <li><a href="https://github.com/xmontiel/Lenguaje-de-Marcas/">Lenguaje de Marcas</a></li>
+                    <li><a href="https://github.com/xmontiel/Entornos-de-Desarrollo">Entornos de Desarrollo</a></li>
+                </ul>
+            </li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+        </ul>
+    </header>
+    <section class="contenido">
+        <div class="formulario">
+            <h2>Contacto</h2>
+            <div>
+                <p>Déjame tus datos y lo que deseas y me pondré en contacto lo antes posible</p>
+            </div>
+        <form action="mailto:xmfyst@gmail.com" method="post">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej. Pedro" required>
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Ej. Sánchez" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Ej. ejemplo@terra.es" required>
+                </div>
+            </fieldset>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje">
+            </textarea>
+            <div class="campo">
+                <input id="enviar" type="submit" value="Enviar">
+                <input id="borrar" type="reset" value="Borrar">
+            </div>
+        </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body.landing {
+    background-color: cadetblue;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header.landing {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(137,66,188);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+header .logo:hover {
+    color: rgb(137,66,188);
+    background: white;
+    transition: 0.5s;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    background-color: rgb(137,66,188);;
+}
+
+header .navbar li label {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    border-bottom: 5px solid rgb(137,66,188);
+    padding: 1px;
+    color: rgb(137,66,188);
+    background-color: white;
+}
+
+header .navbar li label:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li ul {
+    display: none;
+    z-index: 1000;
+}
+
+header .navbar li:hover ul {
+    position: absolute;
+    display: block;
+    padding: 8px;
+    line-height: 2.5;
+}
+
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.tituloBox {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.tituloBox h2 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.tituloBox h2 span {
+    background: rgb(137,66,188);
+    color: white;
+    padding: 0 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(137,66,188);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.tituloBox label {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(137,66,188);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.tituloBox a:hover {
+    color: white;
+    background: rgb(137,66,188);
+}
+
+.tituloBox label:hover {
+    color: white;
+    background: rgb(137,66,188);
+}
+
+.imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.imgBox img {
+    height: 80vh;
+}
+
+.imgBox img:hover {
+    height: 88vh;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li label {
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: rgb(45,3,74);
+}
+
+.redesSociales li:hover label {
+    color: rgb(45,3,74);
+}
+
+.circulo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(2, 112, 108, 0.386);
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+body.cv {
+    margin-top: 230px;
+    background-image: url('img/01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+body.cv .contenido {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px black;
+    display: block;
+}
+
+body.cv header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body.cv header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-family: 'Lora', serif;
+}
+
+body.cv header p a {
+    color: blue;
+    text-decoration: underline;
+}
+
+body.cv h2 {
+    border-bottom: 2px solid rgb(137,66,188);
+    padding-bottom: 5px;
+    color: rgb(137,66,188);
+    margin-top: 30px;
+    font-family: 'Lora', serif;
+}
+
+body.cv ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+body.cv ul li {
+    display: block;
+    padding: 8px;
+    line-height: 1.5;
+}
+
+body.cv .formulario h2 {
+    color: rgb(137,66,188);
+    font-family: 'Lora', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+body.cv .formulario p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+body.cv fieldset {
+    border: 2px solid rgb(137,66,188);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+body.cv legend {
+    font-weight: bold;
+    color: rgb(137,66,188);
+    font-family: 'Lora', serif;
+    padding: 0 10px;
+}
+
+body.cv .campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body.cv label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+body.cv input[type="text"],
+body.cv input[type="email"],
+body.cv textarea {
+    padding: 10px;
+    border: 1px solid rgb(137,66,188);
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%;
+    resize: vertical;
+}
+
+body.cv textarea {
+    height: 100px;
+}
+
+body.cv input[type="submit"],
+body.cv input[type="reset"] {
+    background: rgb(137,66,188);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+body.cv input[type="submit"]:hover,
+body.cv input[type="reset"]:hover {
+    background: white;
+    color: rgb(137,66,188);
+}
+
+/* Responsive */
+
+.drawer {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: none;
+    z-index: 1001;
+    
+}
+
+#ckbox {
+    display: none;
+    
+}
+
+@media(max-width:1020px) {
+
+    
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    position: relative;
+}
+.drawer {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+nav h1 {
+    margin-left: 1rem;
+}
+
+nav ul li {
+    padding: 1rem 0;
+    flex-direction: column;
+    padding-left: 2rem;
+    border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+}
+
+#desaparece {
+    left: -100%;
+    position: absolute;
+}
+
+#ckbox:checked~ul.menu-box {
+    left: 0%;
+    position: absolute;
+    padding-left: 2rem;
+}
+
+.image {
+    display: none;
+}
+footer {
+    text-align: center;
+}
+
+#despliega:checked ~ .submenu {
+    display: flex;
+  }
+  
+.submenu-label {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    display: block;
+}
+
+}
