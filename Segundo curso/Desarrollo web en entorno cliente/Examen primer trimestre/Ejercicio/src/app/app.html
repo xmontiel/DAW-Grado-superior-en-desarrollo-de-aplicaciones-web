@@ -1,0 +1,79 @@
+<div class="container">
+  <h1>Mi Blog de Noticias</h1>
+
+  <section class="formulario-section">
+    <h2>Publicar Nueva Noticia</h2>
+    
+    @if (mensajeError) {
+      <div class="mensaje-error">
+        {{ mensajeError }}
+      </div>
+    }
+
+    <form (submit)="publicar($event, titulo.value, imagen.value, texto.value)">
+      
+      <div class="form-group">
+        <label>Título de la Noticia:</label>
+        <input 
+          type="text" 
+          #titulo 
+          placeholder="Ej: Nueva actualización de Angular 18">
+      </div>
+
+      <div class="form-group">
+        <label>URL de la Imagen:</label>
+        <input 
+          type="url" 
+          #imagen 
+          placeholder="https://ejemplo.com/imagen.jpg">
+      </div>
+
+      <div class="form-group">
+        <label>Contenido de la Noticia:</label>
+        <textarea 
+          #texto 
+          rows="5" 
+          placeholder="Escribe aquí el contenido de tu noticia..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-publicar">Publicar Noticia</button>
+    </form>
+  </section>
+
+  <section class="listado-section">
+    <h2>Listado de Noticias ({{ noticias.length }})</h2>
+
+    <div class="noticias-grid">
+      @for (noticia of noticias; track $index) {
+        <article class="noticia-card">
+          
+          <div class="noticia-imagen">
+            <img [src]="noticia.imagen" [alt]="noticia.titulo">
+          </div>
+
+          <div class="noticia-contenido">
+            <h3>{{ noticia.titulo }}</h3>
+            
+            <p class="noticia-fecha">
+              {{ noticia.fecha.toLocaleDateString('es-ES') }} a las {{ noticia.fecha.toLocaleTimeString('es-ES', {hour: '2-digit', minute:'2-digit'}) }}
+            </p>
+
+            <p class="noticia-texto">{{ noticia.texto }}</p>
+
+            <button 
+              (click)="eliminarNoticia($index)" 
+              class="btn-eliminar">
+              Eliminar
+            </button>
+          </div>
+        </article>
+      }
+    </div>
+
+    @if (noticias.length === 0) {
+      <div class="sin-noticias">
+        <p>No hay noticias publicadas todavía. ¡Sé el primero en publicar!</p>
+      </div>
+    }
+  </section>
+</div>
