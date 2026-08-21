@@ -1,0 +1,111 @@
+<div class="card border-0 shadow-sm mb-4">
+
+  <div class="card-header bg-white border-0 pt-4 pb-0">
+    <div class="d-flex align-items-center">
+      <div class="bg-danger bg-opacity-10 rounded-circle p-3 me-3">
+        <i class="bi bi-plus-circle-fill text-danger fs-4"></i>
+      </div>
+      <div>
+        <h4 class="mb-1 fw-bold">Añadir Producto</h4>
+        <p class="text-muted small mb-0">Completa el formulario para crear un nuevo producto</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body p-4">
+
+    <form [formGroup]="formulario" (ngSubmit)="enviar()">
+
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <label class="form-label fw-semibold text-dark">
+            <i class="bi bi-box-seam text-danger me-2"></i>Nombre del producto
+          </label>
+          <input 
+            class="form-control form-control-lg border-2" 
+            formControlName="name"
+            placeholder="Ej: Camiseta Real Sporting">
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label fw-semibold text-dark">
+            <i class="bi bi-tags text-danger me-2"></i>Categoría
+          </label>
+          <input 
+            class="form-control form-control-lg border-2" 
+            formControlName="category"
+            placeholder="Ej: Accesorios">
+        </div>
+
+        <div class="col-12">
+          <label class="form-label fw-semibold text-dark">
+            <i class="bi bi-text-paragraph text-danger me-2"></i>Descripción
+          </label>
+          <textarea 
+            class="form-control border-2" 
+            rows="3" 
+            formControlName="description"
+            placeholder="Describe las características principales del producto..."
+            style="resize: none;"></textarea>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label fw-semibold text-dark">
+            <i class="bi bi-currency-euro text-danger me-2"></i>Precio
+          </label>
+          <div class="input-group input-group-lg">
+            <input 
+              type="number" 
+              class="form-control border-2" 
+              formControlName="price"
+              placeholder="0.00"
+              step="0.01">
+            <span class="input-group-text bg-light border-2">€</span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label fw-semibold text-dark">
+            <i class="bi bi-image text-danger me-2"></i>URL de la imagen
+          </label>
+          <input 
+            class="form-control form-control-lg border-2" 
+            formControlName="image"
+            placeholder="https://...">
+        </div>
+
+        <div class="col-12">
+          <div class="card bg-light border-0 p-3">
+            <div class="form-check form-switch">
+              <input 
+                type="checkbox" 
+                class="form-check-input" 
+                formControlName="active" 
+                id="activoCheck"
+                style="width: 3rem; height: 1.5rem; cursor: pointer;">
+              <label for="activoCheck" class="form-check-label fw-semibold ms-2" style="cursor: pointer;">
+                <i class="bi bi-check-circle me-1"></i>
+                Producto activo y disponible para la venta
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-4">
+          <button 
+            type="submit" 
+            class="btn btn-danger btn-lg w-100 d-flex align-items-center justify-content-center gap-2 shadow-sm"
+            style="transition: all 0.3s ease; background: linear-gradient(135deg, #8B1538 0%, #B91D47 100%); border: none;">
+            <i class="bi bi-plus-circle-fill"></i>
+            <span class="fw-semibold">Crear producto</span>
+          </button>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

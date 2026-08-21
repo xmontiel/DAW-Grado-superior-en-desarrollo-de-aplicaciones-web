@@ -1,0 +1,12 @@
+.form-check-input:checked {
+  background-color: #8B1538;
+  border-color: #8B1538;
+}
+
+.input-group input:focus {
+  border-color: transparent !important;
+}
+
+.form-switch .form-check-input {
+  transition: all 0.3s ease;
+}

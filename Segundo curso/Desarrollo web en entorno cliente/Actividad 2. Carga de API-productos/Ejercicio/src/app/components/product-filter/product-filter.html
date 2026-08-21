@@ -1,0 +1,61 @@
+<div class="card border-0 shadow-sm mb-4" style="background: linear-gradient(135deg, #8B1538 0%, #B91D47 100%);">
+  
+  <div class="card-body p-4">
+    
+    <div class="d-flex align-items-center mb-4">
+      <div class="bg-white bg-opacity-25 rounded-circle p-2 me-3" style="backdrop-filter: blur(10px);">
+        <i class="bi bi-funnel-fill text-white fs-4"></i>
+      </div>
+      <h5 class="fw-bold mb-0 text-white">Filtrar productos</h5>
+    </div>
+
+    <div class="row g-3">
+
+      <div class="col-md-4">
+        <div class="input-group shadow-sm">
+          <span class="input-group-text bg-white border-0">
+            <i class="bi bi-search text-muted"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control border-0 ps-0"
+            placeholder="Buscar por nombre..."
+            (input)="onNombreChange($event)"
+            style="box-shadow: none !important;">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="input-group shadow-sm">
+          <span class="input-group-text bg-white border-0">
+            <i class="bi bi-tag text-muted"></i>
+          </span>
+          <input
+            type="text"
+            class="form-control border-0 ps-0"
+            placeholder="Categoría..."
+            (input)="onCategoriaChange($event)"
+            style="box-shadow: none !important;">
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="form-check form-switch bg-white px-4 py-2 rounded shadow-sm w-100">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="soloActivos"
+            (change)="onActivoChange($event)"
+            style="cursor: pointer; width: 3rem; height: 1.5rem;">
+          <label class="form-check-label fw-semibold ms-2" for="soloActivos" style="cursor: pointer;">
+            Solo productos activos
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

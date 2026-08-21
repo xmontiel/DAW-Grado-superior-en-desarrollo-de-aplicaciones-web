@@ -1,0 +1,75 @@
+<header class="shadow-sm mb-4" style="background: linear-gradient(135deg, #8B1538 0%, #B91D47 100%);">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center">
+      
+      <div class="d-flex align-items-center">
+        <div class="bg-white bg-opacity-25 rounded-circle p-3 me-3" style="backdrop-filter: blur(10px);">
+          <i class="bi bi-shop text-white fs-3"></i>
+        </div>
+        <div>
+          <h1 class="h3 mb-0 text-white fw-bold">Gestión de Productos</h1>
+          <p class="mb-0 text-white-50 small">Moda y complementos</p>
+        </div>
+      </div>
+
+      <nav class="d-none d-md-flex gap-3">
+        <a href="#" class="text-white text-decoration-none px-3 py-2 rounded transition-all" 
+           style="transition: all 0.3s ease; background-color: rgba(255,255,255,0.1);">
+          <i class="bi bi-house-door me-2"></i>Inicio
+        </a>
+        <a href="#" class="text-white text-decoration-none px-3 py-2 rounded transition-all" 
+           style="transition: all 0.3s ease;">
+          <i class="bi bi-envelope me-2"></i>Contacto
+        </a>
+      </nav>
+
+      <button class="btn btn-link text-white d-md-none p-0" style="font-size: 1.5rem;">
+        <i class="bi bi-list"></i>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<main class="container mb-5">
+  
+  <app-product-form
+    (productoCreado)="onProductoCreado($event)">
+  </app-product-form>
+
+  <app-product-filter></app-product-filter>
+
+  <app-products-list></app-products-list>
+
+</main>
+
+<footer class="mt-auto py-4 border-top" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+          <i class="bi bi-code-slash text-primary me-2 fs-5"></i>
+          <span class="text-muted">
+            © 2025 · Actividad DWEC · Angular 18
+          </span>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center text-md-end">
+        <div class="d-flex gap-3 justify-content-center justify-content-md-end">
+          <a href="#" class="text-muted text-decoration-none" style="transition: color 0.3s;">
+            <i class="bi bi-github fs-5"></i>
+          </a>
+          <a href="#" class="text-muted text-decoration-none" style="transition: color 0.3s;">
+            <i class="bi bi-linkedin fs-5"></i>
+          </a>
+          <a href="#" class="text-muted text-decoration-none" style="transition: color 0.3s;">
+            <i class="bi bi-twitter fs-5"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>

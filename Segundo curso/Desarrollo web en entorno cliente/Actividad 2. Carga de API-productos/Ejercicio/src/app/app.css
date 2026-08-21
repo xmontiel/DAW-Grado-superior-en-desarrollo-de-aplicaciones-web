@@ -1,0 +1,18 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fa;
+}
+
+main {
+  flex: 1;
+}
+
+header nav a:hover {
+  background-color: rgba(255,255,255,0.2) !important;
+}
+
+footer a:hover {
+  color: #8B1538 !important;
+}
