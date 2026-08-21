@@ -1,0 +1,23 @@
+<main class="container">
+  <h2>Listado de Series</h2>
+
+  <p *ngIf="loading">Cargando series...</p>
+  <p *ngIf="error" class="error">{{ error }}</p>
+
+  <table *ngIf="!loading && !error">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Canal</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let serie of series">
+        <td>{{ serie.title }}</td>
+        <td>{{ serie.channel }}</td>
+        <td>{{ serie.rating }}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
