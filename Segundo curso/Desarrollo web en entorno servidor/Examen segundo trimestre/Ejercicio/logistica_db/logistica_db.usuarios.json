@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6971c3b4662995937e8e1f5d"
+  },
+  "username": "empresa1",
+  "password": "{noop}password123",
+  "nombre": "Transportes García SL",
+  "email": "empresa1@logistica.com",
+  "enabled": 1,
+  "rol": "ROLE_EMPRESA",
+  "_class": "seguridad.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6971c3b4662995937e8e1f5e"
+  },
+  "username": "empresa2",
+  "password": "{noop}password123",
+  "nombre": "LogiExpress SA",
+  "email": "empresa2@logistica.com",
+  "enabled": 1,
+  "rol": "ROLE_EMPRESA",
+  "_class": "seguridad.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6971c3b4662995937e8e1f5f"
+  },
+  "username": "conductor1",
+  "password": "{noop}password123",
+  "nombre": "Juan Pérez",
+  "email": "conductor1@logistica.com",
+  "enabled": 1,
+  "rol": "ROLE_CONDUCTOR",
+  "_class": "seguridad.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6971c3b4662995937e8e1f60"
+  },
+  "username": "conductor2",
+  "password": "{noop}password123",
+  "nombre": "María López",
+  "email": "conductor2@logistica.com",
+  "enabled": 1,
+  "rol": "ROLE_CONDUCTOR",
+  "_class": "seguridad.model.entity.Usuario"
+},
+{
+  "_id": {
+    "$oid": "6971c3b4662995937e8e1f61"
+  },
+  "username": "conductor3",
+  "password": "{noop}password123",
+  "nombre": "Carlos Ruiz",
+  "email": "conductor3@logistica.com",
+  "enabled": 1,
+  "rol": "ROLE_CONDUCTOR",
+  "_class": "seguridad.model.entity.Usuario"
+}]

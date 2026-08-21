@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62ab"
+  },
+  "descripcion": "Material de construcción",
+  "origen": "Madrid",
+  "destino": "Barcelona",
+  "pesoKg": 15000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-02-15T00:00:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 1000
+},
+{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62ac"
+  },
+  "descripcion": "Productos electrónicos",
+  "origen": "Valencia",
+  "destino": "Sevilla",
+  "pesoKg": 8000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-02-10T00:00:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 500
+},
+{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62ad"
+  },
+  "descripcion": "Maquinaria industrial",
+  "origen": "Bilbao",
+  "destino": "Zaragoza",
+  "pesoKg": 25000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-02-20T00:00:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 300
+},
+{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62ae"
+  },
+  "descripcion": "Alimentos perecederos",
+  "origen": "Murcia",
+  "destino": "Madrid",
+  "pesoKg": 12000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-01-25T00:00:00.000Z"
+  },
+  "estado": "ASIGNADA",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 600
+},
+{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62af"
+  },
+  "descripcion": "Textiles y ropa",
+  "origen": "Barcelona",
+  "destino": "Valencia",
+  "pesoKg": 6000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-01-22T00:00:00.000Z"
+  },
+  "estado": "ENTREGADA",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 300
+},
+{
+  "_id": {
+    "$oid": "69715ddd5f0527d0081f62b0"
+  },
+  "descripcion": "Equipamiento deportivo",
+  "origen": "Madrid",
+  "destino": "Málaga",
+  "pesoKg": 10000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-02-05T00:00:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 550.5
+},
+{
+  "_id": {
+    "$oid": "697265891295593bafa913d2"
+  },
+  "descripcion": "Mercancía de prueba",
+  "origen": "Madrid",
+  "destino": "Barcelona",
+  "pesoKg": 15000,
+  "fechaEntregaEstimada": {
+    "$date": "2026-02-28T23:00:00.000Z"
+  },
+  "estado": "ASIGNADA",
+  "_class": "seguridad.model.entity.Mercancia",
+  "distanciaKm": 1000
+}]

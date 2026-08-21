@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "69715dca5f0527d0081f62a1"
+  },
+  "camionId": "CAMION_ID_1",
+  "descripcion": "Avería en el sistema de refrigeración",
+  "fecha": {
+    "$date": "2026-01-10T08:30:00.000Z"
+  },
+  "tipo": "MECANICA",
+  "estado": "RESUELTA",
+  "_class": "seguridad.model.entity.Incidencia"
+},
+{
+  "_id": {
+    "$oid": "69715dca5f0527d0081f62a2"
+  },
+  "camionId": "CAMION_ID_2",
+  "descripcion": "Retraso por nevada en autopista",
+  "fecha": {
+    "$date": "2026-01-05T15:20:00.000Z"
+  },
+  "tipo": "METEOROLOGICA",
+  "estado": "ABIERTA",
+  "_class": "seguridad.model.entity.Incidencia"
+},
+{
+  "_id": {
+    "$oid": "69715dca5f0527d0081f62a3"
+  },
+  "camionId": "CAMION_ID_3",
+  "descripcion": "Documentación de aduana incompleta",
+  "fecha": {
+    "$date": "2025-12-28T10:00:00.000Z"
+  },
+  "tipo": "DOCUMENTAL",
+  "estado": "RESUELTA",
+  "_class": "seguridad.model.entity.Incidencia"
+},
+{
+  "_id": {
+    "$oid": "69715dca5f0527d0081f62a4"
+  },
+  "camionId": "69715dc15f0527d0081f629c",
+  "descripcion": "Problema con neumático trasero",
+  "fecha": {
+    "$date": "2024-01-17T12:30:00.000Z"
+  },
+  "tipo": "MECANICA",
+  "estado": "ABIERTA",
+  "_class": "seguridad.model.entity.Incidencia"
+},
+{
+  "_id": {
+    "$oid": "697289091295593bafa913d4"
+  },
+  "camionId": "69715dc15f0527d0081f629b",
+  "descripcion": "Avería en el motor",
+  "fecha": {
+    "$date": "2026-01-22T20:31:05.625Z"
+  },
+  "tipo": "MECANICA",
+  "estado": "ABIERTA",
+  "_class": "seguridad.model.entity.Incidencia"
+}]

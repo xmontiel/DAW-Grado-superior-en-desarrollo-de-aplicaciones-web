@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "69715dc15f0527d0081f629b"
+  },
+  "conductorId": "conductor1",
+  "matricula": "1234ABC",
+  "modelo": "Mercedes Actros",
+  "capacidadKg": 24000,
+  "estado": "ACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+},
+{
+  "_id": {
+    "$oid": "69715dc15f0527d0081f629c"
+  },
+  "conductorId": "conductor1",
+  "matricula": "5678DEF",
+  "modelo": "Volvo FH16",
+  "capacidadKg": 28000,
+  "estado": "ACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+},
+{
+  "_id": {
+    "$oid": "69715dc15f0527d0081f629d"
+  },
+  "conductorId": "conductor2",
+  "matricula": "9012GHI",
+  "modelo": "Scania R500",
+  "capacidadKg": 26000,
+  "estado": "ACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+},
+{
+  "_id": {
+    "$oid": "69715dc15f0527d0081f629e"
+  },
+  "conductorId": "conductor2",
+  "matricula": "3456JKL",
+  "modelo": "MAN TGX",
+  "capacidadKg": 22000,
+  "estado": "INACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+},
+{
+  "_id": {
+    "$oid": "69715dc15f0527d0081f629f"
+  },
+  "conductorId": "conductor3",
+  "matricula": "7890MNO",
+  "modelo": "Iveco Stralis",
+  "capacidadKg": 20000,
+  "estado": "ACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+},
+{
+  "_id": {
+    "$oid": "697264c41295593bafa913d1"
+  },
+  "conductorId": "conductor1",
+  "matricula": "TEST123",
+  "modelo": "Scania Test",
+  "capacidadKg": 20000,
+  "estado": "ACTIVO",
+  "_class": "seguridad.model.entity.Camion"
+}]

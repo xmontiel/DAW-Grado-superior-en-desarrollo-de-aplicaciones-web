@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "69715dd75f0527d0081f62a7"
+  },
+  "camionId": "CAMION_ID_1",
+  "mercanciaId": "MERCANCIA_ID_1",
+  "fechaInscripcion": {
+    "$date": "2026-01-15T10:30:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.InscripcionTransporte"
+},
+{
+  "_id": {
+    "$oid": "69715dd75f0527d0081f62a8"
+  },
+  "camionId": "CAMION_ID_2",
+  "mercanciaId": "MERCANCIA_ID_1",
+  "fechaInscripcion": {
+    "$date": "2026-01-16T14:20:00.000Z"
+  },
+  "estado": "PENDIENTE",
+  "_class": "seguridad.model.entity.InscripcionTransporte"
+},
+{
+  "_id": {
+    "$oid": "69715dd75f0527d0081f62a9"
+  },
+  "camionId": "CAMION_ID_3",
+  "mercanciaId": "MERCANCIA_ID_2",
+  "fechaInscripcion": {
+    "$date": "2026-01-14T09:15:00.000Z"
+  },
+  "estado": "ACEPTADA",
+  "_class": "seguridad.model.entity.InscripcionTransporte"
+},
+{
+  "_id": {
+    "$oid": "6972687a1295593bafa913d3"
+  },
+  "camionId": "697264c41295593bafa913d1",
+  "mercanciaId": "697265891295593bafa913d2",
+  "fechaInscripcion": {
+    "$date": "2026-01-22T18:12:10.794Z"
+  },
+  "estado": "ACEPTADA",
+  "_class": "seguridad.model.entity.InscripcionTransporte"
+}]
