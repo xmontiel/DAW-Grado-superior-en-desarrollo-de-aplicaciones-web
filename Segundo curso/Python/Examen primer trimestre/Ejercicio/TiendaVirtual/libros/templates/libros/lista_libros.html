@@ -1,0 +1,17 @@
+<h1>Lista de Libros</h1>
+
+<a href="{% url 'crear_libro' %}">➕ Crear nuevo libro</a>
+<hr>
+
+<ul>
+    {% for libro in libros %}
+        <li>
+            <a href="{% url 'detalle_libro' libro.pk %}">
+                {{ libro.titulo }} - {{ libro.autor }}
+            </a>
+            ({{ libro.paginas }} páginas)
+        </li>
+    {% empty %}
+        <p>No hay libros registrados</p>
+    {% endfor %}
+</ul>
