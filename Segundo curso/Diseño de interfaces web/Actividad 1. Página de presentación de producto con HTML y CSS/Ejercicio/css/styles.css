@@ -1,0 +1,45 @@
+body {
+  background-color: lightblue;
+}
+
+.producto {
+  width: 500px;
+  height: 500px;
+  background-image: url(../img/pina.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #20691c;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+li{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
