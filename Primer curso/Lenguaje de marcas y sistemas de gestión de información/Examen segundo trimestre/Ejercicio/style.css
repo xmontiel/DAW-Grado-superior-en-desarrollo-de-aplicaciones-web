@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Street';
+    src: url("font/street.otf");
+}
+
+h1 {
+    font-family: "Street";
+    color: crimson;
+    font-size: 46px;
+    text-align: center;
+}
+
+table {
+    width: 600px;
+    height: 800px;
+    border: 10px outset rgb(237, 175, 5);
+    border-radius: 10px;
+    background-color: black;
+    margin: auto;
+}
+
+.cabecera {
+    background-image: url("img/fondocabecera.jpg");
+    background-size: 100% 100%;
+    font-family: "Street";
+    font-size: 40px;
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+td {
+    width: 40px;
+    height: 45px;
+    font-family: "Street";
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+}
+
+body {
+    background-image: url("img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Depende de lo que se considere mantener la imagen fija, sería borrar o mantener esta línea */
+}
+
+h2 {
+    font-family: "Street";
+    color: crimson;
+    font-size: 28px;
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    height: 1100px;
+    border: 10px outset rgb(237, 175, 5);
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin: auto;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+legend {
+    font-family: "Street";
+    color: rgb(237, 175, 5);
+    font-size: 14px;
+}
+
+textarea {
+    width: 560px;
+}
+
+div {
+    margin-top: 15px;
+}
+
+fieldset{
+    margin-bottom: 15px;
+}
+
+.nomargin {
+    margin-top: 0px;
+}
+
+.boton {
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: "Street";
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
